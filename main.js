@@ -27,3 +27,9 @@ alert(` сумма - ${b+c}\n разность - ${b-c}\n произведени
 
 let result = 2**5;
 alert(result)
+
+// 6 задание 
+
+let m = 9;
+let n = 2;
+alert(m%n)
