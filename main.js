@@ -16,3 +16,9 @@ alert(`год выпуска Iphone ${year}`)
 
 let nameJS = (`Брендан Эйх`);
 alert(`создатель JavaScript - ${nameJS}`)
+
+// 4 задание 
+
+let b = 10;
+let c = 2;
+alert(` сумма - ${b+c}\n разность - ${b-c}\n произведение - ${b*c}\n частное - ${b/c}`)
