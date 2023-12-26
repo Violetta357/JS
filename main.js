@@ -33,3 +33,14 @@ alert(result)
 let m = 9;
 let n = 2;
 alert(m%n)
+
+// 7 задание 
+
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num ++;
+num --;
+alert(num);
