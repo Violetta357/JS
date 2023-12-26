@@ -22,3 +22,8 @@ alert(`создатель JavaScript - ${nameJS}`)
 let b = 10;
 let c = 2;
 alert(` сумма - ${b+c}\n разность - ${b-c}\n произведение - ${b*c}\n частное - ${b/c}`)
+
+// 5 задание
+
+let result = 2**5;
+alert(result)
