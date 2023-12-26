@@ -50,3 +50,27 @@ alert(num);
 let age = prompt(`Сколько вам лет?`);
 alert(age)
 
+// 9 задание 
+
+const user = {
+    name:`Виолетта`,
+    age: 31,
+    isAdmin: true
+}
+
+// задание 9.1
+
+user [`city of residence`] = `Москва`;
+
+// задание 9.2
+
+user.age = 25;
+
+// задание 9.3
+
+delete user [`city of residence`];
+
+// задание 9.4
+
+let info = prompt(`Какую информацию хотите узнать о пользователе?`);
+alert(user[info]);
