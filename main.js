@@ -74,3 +74,8 @@ delete user [`city of residence`];
 
 let info = prompt(`Какую информацию хотите узнать о пользователе?`);
 alert(user[info]);
+
+// задание 10
+
+let userName = prompt(`Как тебя зовут?`);
+alert(`Привет, ${userName} !`)
