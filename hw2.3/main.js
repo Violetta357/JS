@@ -18,3 +18,14 @@ if (c > 0 && c < 10) {
 } else {
     console.log('неверно');
 }
+
+// задание 3
+
+let d = 150;
+let e = 99;
+
+if (d > 100 || e > 100) {
+    console.log('верно');
+} else {
+    console.log('неверно');
+}
