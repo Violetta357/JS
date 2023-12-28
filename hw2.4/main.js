@@ -6,3 +6,10 @@ while(i < 2){
   i++
 }
 
+// задание 2
+
+let r = 1;
+while(r <= 5){
+  console.log(r);
+  r++
+}
