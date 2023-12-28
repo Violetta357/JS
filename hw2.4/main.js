@@ -21,3 +21,15 @@ while (x <= 22) {
   console.log(x);
   x++;
 }
+
+// задание 4
+
+const obj = {
+  'Коля': 200, 
+  'Вася': 300,
+  'Петя': 400,
+}
+for (const key in obj) {
+   alert(`${key} - зарплата ${obj[key]} долларов`)
+    
+  }
