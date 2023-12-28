@@ -44,3 +44,9 @@ for (const key in obj) {
   }
   console.log(n);
   console.log(num);
+
+  // задание 6
+
+  for (let friday = 4; friday <= 31; friday = friday + 7) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+  }
