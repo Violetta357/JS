@@ -13,3 +13,16 @@ function num (number) {
   }
   console.log(num(4));
   console.log(num(7));
+
+  // задание 3
+
+  function printSquare (number) {
+    return number **2
+  }
+  console.log(printSquare(5));
+
+  function returnSquare (number) {
+    return number **2
+  }
+const result = returnSquare (10)
+console.log(result);
