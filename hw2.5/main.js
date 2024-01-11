@@ -26,3 +26,16 @@ function num (number) {
   }
 const result = returnSquare (10)
 console.log(result);
+
+// задание 4
+
+function userAge () {
+  let age = prompt('Сколько тебе лет?')
+  if(age < 0) {
+    return ('Вы ввели неправильное значение')
+  } else if (age <= 12){
+   return ('Привет, друг!') 
+  } else {
+    return ('Добро пожаловать!')
+  }
+  } alert (userAge())
