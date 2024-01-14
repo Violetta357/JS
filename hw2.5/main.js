@@ -65,3 +65,29 @@ function cubeNumber() {
   }
 }
 alert(cubeNumber());
+
+// задание 7
+
+function area() {
+  return Math.PI * this.radius ** 2;
+  }
+  function perimeter() {
+    return 2 * Math.PI * this.radius;
+  }
+
+let circle1 = {
+  radius:5, 
+  getArea:area,
+  getPerimeter:perimeter,
+}
+
+let circle2 = {
+  radius:7, 
+  getArea:area,
+  getPerimeter:perimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
