@@ -52,3 +52,16 @@ function mult(c,d) {
 }
 console.log(mult(12, 2));
 console.log(mult('a', 2));
+
+// задание 6 
+
+function cubeNumber() {
+  let n = prompt('Введите число:', '');
+  if (isNaN(n)) {
+    return 'Переданный параметр не является числом'
+  } else {
+    const res = n ** 3
+    return `${n} в кубе равняется ${res}`
+  }
+}
+alert(cubeNumber());
