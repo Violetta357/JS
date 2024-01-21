@@ -70,3 +70,9 @@ let arrayNum = [1, 7, 5, 3, 9,]
 for (let i = 0; i < arrayNum.length - 1; i++) {
   console.log(arrayNum[i]+arrayNum[i+1]);
 }
+
+// задание 11
+
+let element = [2, 11, 17, 8]
+const square = element.map(el => el **2)
+console.log(square);
