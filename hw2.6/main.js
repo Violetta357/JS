@@ -33,3 +33,9 @@ console.log(array);
 let numm = [1, 1, 1];
 numm.push(2, 2, 2);
 console.log(numm);
+
+// задание 6
+
+let arrNumber = [9, 8, 7, 'a', 6, 5]
+arrNumber.sort().pop()
+console.log(arrNumber);
