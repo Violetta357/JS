@@ -76,3 +76,11 @@ for (let i = 0; i < arrayNum.length - 1; i++) {
 let element = [2, 11, 17, 8]
 const square = element.map(el => el **2)
 console.log(square);
+
+// задание 12
+
+let word = ['слово', '', 'слог', 'длинное предложение', 'буква']
+const arrWord = word.map(function(arr){
+  return arr.length
+})
+console.log(arrWord);
