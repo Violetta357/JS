@@ -25,28 +25,29 @@ while (x <= 22) {
 // задание 4
 
 const obj = {
-  'Коля': 200, 
+  'Коля': 200,
   'Вася': 300,
   'Петя': 400,
-}
+};
 for (const key in obj) {
-   alert(`${key} - зарплата ${obj[key]} долларов`)
-    
-  }
+  alert(`${key} - зарплата ${obj[key]} долларов`);
+}
 
-  // задание 5
+// задание 5
 
-  let n = 1000;
-  let num = 0;
-  while (n >= 50) {
-    n = n / 2;
-    num++
-  }
-  console.log(n);
-  console.log(num);
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+  n = n / 2;
+  num++;
+}
+console.log(n);
+console.log(num);
 
-  // задание 6
+// задание 6
 
-  for (let friday = 4; friday <= 31; friday = friday + 7) {
-    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
-  }
+for (let friday = 4; friday <= 31; friday = friday + 7) {
+  console.log(
+    `Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`
+  );
+}
