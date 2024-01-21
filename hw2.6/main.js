@@ -53,3 +53,7 @@ else {
 alert('Не угадал!')
 }
 
+// задание 8
+
+let greet = 'abcdef';
+console.log([...greet].reverse().join(''));
