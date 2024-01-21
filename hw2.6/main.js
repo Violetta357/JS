@@ -17,3 +17,15 @@ console.log(position);
 let line = [1, 3, 5, 10, 20]
 line = line.join(' ')
 console.log(line);
+
+// задание 4
+
+let array = [];
+for (let i = 0; i < 3; i++) {
+  array[i] = [];
+  for (let a = 0; a < 3; a++)
+  {
+    array[i][a] = 1
+  }
+}
+console.log(array);
