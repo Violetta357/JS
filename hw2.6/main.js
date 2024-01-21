@@ -6,3 +6,8 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(numbers[i]);
 }
 
+// задание 2
+
+const arr = [1, 5, 4, 10, 0, 3]
+const position  = arr.indexOf(4)
+console.log(position);
