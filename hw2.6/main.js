@@ -39,3 +39,17 @@ console.log(numm);
 let arrNumber = [9, 8, 7, 'a', 6, 5]
 arrNumber.sort().pop()
 console.log(arrNumber);
+
+// задание 7 
+
+let number = [9, 8, 7, 6, 5]
+let userNumber = +prompt('Угадай число от 1 до 10')
+if (number.includes(userNumber)) {
+  alert('Угадал!')
+}else if(isNaN(userNumber)){
+  alert('Введенное значение не явялется числом')
+}
+else {
+alert('Не угадал!')
+}
+
