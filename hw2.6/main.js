@@ -62,3 +62,11 @@ console.log([...greet].reverse().join(''));
 
 const arr1 = [[1, 2, 3,],[4, 5, 6]]
 console.log(arr1.flat());
+
+
+// задание  10
+
+let arrayNum = [1, 7, 5, 3, 9,]
+for (let i = 0; i < arrayNum.length - 1; i++) {
+  console.log(arrayNum[i]+arrayNum[i+1]);
+}
