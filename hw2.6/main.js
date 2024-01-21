@@ -84,3 +84,19 @@ const arrWord = word.map(function(arr){
   return arr.length
 })
 console.log(arrWord);
+
+// 13 задание 
+
+
+function filterPositive(array2) {
+  const arr = []
+  for(let i = 0; i < array2.length; i++){
+    if(array2[i]< 0){
+      arr.push(array2[i])
+    }
+  }
+return arr 
+}
+let array2 = [5, -100, 55, 74, -5, -700, 333]
+let negativeNumbers = filterPositive(array2)
+console.log(negativeNumbers);
