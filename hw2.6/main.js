@@ -57,3 +57,8 @@ alert('Не угадал!')
 
 let greet = 'abcdef';
 console.log([...greet].reverse().join(''));
+
+// задание 9
+
+const arr1 = [[1, 2, 3,],[4, 5, 6]]
+console.log(arr1.flat());
