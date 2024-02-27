@@ -43,25 +43,25 @@ alert(userAge());
 
 // задание 5
 
-function mult(c,d) {
+function mult(c, d) {
   if (isNaN(c) || isNaN(d)) {
-    return 'Одно или оба значения не являются числом'
+    return "Одно или оба значения не являются числом";
   } else {
-    return c*d
+    return c * d;
   }
 }
 console.log(mult(12, 2));
-console.log(mult('a', 2));
+console.log(mult("a", 2));
 
-// задание 6 
+// задание 6
 
 function cubeNumber() {
-  let n = prompt('Введите число:', '');
+  let n = prompt("Введите число:", "");
   if (isNaN(n)) {
-    return 'Переданный параметр не является числом'
+    return "Переданный параметр не является числом";
   } else {
-    const res = n ** 3
-    return `${n} в кубе равняется ${res}`
+    const res = n ** 3;
+    return `${n} в кубе равняется ${res}`;
   }
 }
 alert(cubeNumber());
@@ -70,22 +70,22 @@ alert(cubeNumber());
 
 function area() {
   return Math.PI * this.radius ** 2;
-  }
-  function perimeter() {
-    return 2 * Math.PI * this.radius;
-  }
+}
+function perimeter() {
+  return 2 * Math.PI * this.radius;
+}
 
 let circle1 = {
-  radius:5, 
-  getArea:area,
-  getPerimeter:perimeter,
-}
+  radius: 5,
+  getArea: area,
+  getPerimeter: perimeter,
+};
 
 let circle2 = {
-  radius:7, 
-  getArea:area,
-  getPerimeter:perimeter,
-}
+  radius: 7,
+  getArea: area,
+  getPerimeter: perimeter,
+};
 
 console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
