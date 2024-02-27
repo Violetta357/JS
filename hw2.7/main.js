@@ -32,3 +32,9 @@ const number = [52, 53, 49, 77, 21, 32]
 const min = Math.min(...number);
 const max = Math.max(...number);
 console.log(min,max);
+
+// задание 5
+function getRandomArbitrary(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+console.log(getRandomArbitrary(1,10));
