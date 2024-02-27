@@ -59,3 +59,11 @@ console.log(getRandomNumber(1,5));
 // задание 8
 let date = new Date();
 console.log(date);
+
+// задание 9
+let currentDate = new Date();
+let nextDate = new Date();
+let addDate = 73;
+nextDate.setDate(currentDate.getDate() + addDate);
+nextDate.toLocaleTimeString('ru-RU')
+console.log(nextDate);
