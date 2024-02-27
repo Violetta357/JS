@@ -67,3 +67,19 @@ let addDate = 73;
 nextDate.setDate(currentDate.getDate() + addDate);
 nextDate.toLocaleTimeString('ru-RU')
 console.log(nextDate);
+
+// задание 10
+function formateDate(date){
+  const daysOfWeek = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота' ];
+  const months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+  const dayOfWeek = daysOfWeek[date.getDay()];
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  const hours = date.getHours().toString().padStart(2,'0');
+  const minutes = date.getMinutes().toString().padStart(2,'0');
+  const seconds = date.getSeconds().toString().padStart(2,'0');
+  return `дата: ${day} ${month} ${year}: ${dayOfWeek}.\nвремя: ${hours}:${minutes}:${seconds}`
+}
+const curDate = new Date();
+console.log(formateDate(curDate));
