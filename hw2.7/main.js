@@ -26,3 +26,9 @@ let down = Math.floor(num);
 let up = Math.ceil(num);
 let near = Math.round(num);
 console.log(down, up, near);
+
+// задание 4
+const number = [52, 53, 49, 77, 21, 32]
+const min = Math.min(...number);
+const max = Math.max(...number);
+console.log(min,max);
