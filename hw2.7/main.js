@@ -38,3 +38,14 @@ function getRandomArbitrary(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 console.log(getRandomArbitrary(1,10));
+
+// задание 6
+function getRandomArrNumbers(n){
+  const result = [];
+
+  for (let i = 0; i < n/2; i++){
+    result.push(Math.round(Math.random() * (n+1)))
+  }
+  return result
+}
+console.log(getRandomArrNumbers(12));
