@@ -46,3 +46,15 @@ const peoples = [
 ];
 
 console.log(filter(peoples, isMale));
+
+// задание 3
+
+let time = 0; // переменная с которой начинается отсчет
+const timeInterval = setInterval(function () {
+  console.log(new Date());
+  time += 3; // шаг интервала
+  if (time >= 30) { // условие по истечении 30 секунд
+    clearInterval(timeInterval);
+    console.log("30 секунд прошло");
+  }
+},3000); // новое время по прошествию 3 секунд
