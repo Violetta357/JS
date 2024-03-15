@@ -1,0 +1,78 @@
+// Мобильная версия
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+    padding-top: 239px;
+  }
+
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__title {
+    width: 343px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .header__text {
+    width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .games {
+    height: 1221px;
+  }
+
+  .games__box-wrapper {
+    width: 343px;
+  }
+
+  .season,
+  .word {
+    flex-direction: column;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64px;
+
+  }
+  .season__content,
+  .word__content {
+    width: 343px;
+    align-items: center;
+
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .season__img,
+  .word__img {
+    width: 344px;
+    height: 236px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    background: url(../image/Rectangle\ mob.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
