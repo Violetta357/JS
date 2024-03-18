@@ -43,12 +43,12 @@ console.log(getRandomArbitrary(1, 10));
 function getRandomArrNumbers(n) {
   const result = [];
 
-  for (let i = 0; i < n / 2; i++) {
-    result.push(Math.round(Math.random() * (n + 1)));
+  for (let i = 0; i < Math.floor(n / 2); i++) {
+    result.push(Math.floor(Math.random() * n));
   }
   return result;
 }
-console.log(getRandomArrNumbers(12));
+console.log(getRandomArrNumbers(7));
 
 // задание 7
 function getRandomNumber(min, max) {
