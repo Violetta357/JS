@@ -36,67 +36,67 @@ console.log(numm);
 
 // задание 6
 
-let arrNumber = [9, 8, 7, 'a', 6, 5]
-arrNumber.sort().pop()
+let arrNumber = [9, 8, 7, "a", 6, 5];
+arrNumber.sort().pop();
 console.log(arrNumber);
 
-// задание 7 
+// задание 7
 
-let number = [9, 8, 7, 6, 5]
-let userNumber = +prompt('Угадай число от 1 до 10')
+let number = [9, 8, 7, 6, 5];
+let userNumber = +prompt("Угадай число от 1 до 10");
 if (number.includes(userNumber)) {
-  alert('Угадал!')
-}else if(isNaN(userNumber)){
-  alert('Введенное значение не явялется числом')
-}
-else {
-alert('Не угадал!')
+  alert("Угадал!");
+} else if (isNaN(userNumber)) {
+  alert("Введенное значение не явялется числом");
+} else {
+  alert("Не угадал!");
 }
 
 // задание 8
 
-let greet = 'abcdef';
-console.log([...greet].reverse().join(''));
+let greet = "abcdef";
+console.log([...greet].reverse().join(""));
 
 // задание 9
 
-const arr1 = [[1, 2, 3,],[4, 5, 6]]
+const arr1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
 console.log(arr1.flat());
-
 
 // задание  10
 
-let arrayNum = [1, 7, 5, 3, 9,]
+let arrayNum = [1, 7, 5, 3, 9];
 for (let i = 0; i < arrayNum.length - 1; i++) {
-  console.log(arrayNum[i]+arrayNum[i+1]);
+  console.log(arrayNum[i] + arrayNum[i + 1]);
 }
 
 // задание 11
 
-let element = [2, 11, 17, 8]
-const square = element.map(el => el **2)
+let element = [2, 11, 17, 8];
+const square = element.map((el) => el ** 2);
 console.log(square);
 
 // задание 12
 
-let word = ['слово', '', 'слог', 'длинное предложение', 'буква']
-const arrWord = word.map(function(arr){
-  return arr.length
-})
+let word = ["слово", "", "слог", "длинное предложение", "буква"];
+const arrWord = word.map(function (arr) {
+  return arr.length;
+});
 console.log(arrWord);
 
-// 13 задание 
-
+// 13 задание
 
 function filterPositive(array2) {
-  const arr = []
-  for(let i = 0; i < array2.length; i++){
-    if(array2[i]< 0){
-      arr.push(array2[i])
+  const arr = [];
+  for (let i = 0; i < array2.length; i++) {
+    if (array2[i] < 0) {
+      arr.push(array2[i]);
     }
   }
-return arr 
+  return arr;
 }
-let array2 = [5, -100, 55, 74, -5, -700, 333]
-let negativeNumbers = filterPositive(array2)
+let array2 = [5, -100, 55, 74, -5, -700, 333];
+let negativeNumbers = filterPositive(array2);
 console.log(negativeNumbers);
