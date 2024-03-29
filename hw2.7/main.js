@@ -44,7 +44,7 @@ function getRandomArrNumbers(n) {
   const result = [];
 
   for (let i = 0; i < Math.floor(n / 2); i++) {
-    result.push(Math.floor(Math.random() * (n+1)));
+    result.push(Math.floor(Math.random() * (n + 1)));
   }
   return result;
 }
