@@ -28,33 +28,33 @@ let near = Math.round(num);
 console.log(down, up, near);
 
 // задание 4
-const number = [52, 53, 49, 77, 21, 32]
+const number = [52, 53, 49, 77, 21, 32];
 const min = Math.min(...number);
 const max = Math.max(...number);
-console.log(min,max);
+console.log(min, max);
 
 // задание 5
 function getRandomArbitrary(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
-console.log(getRandomArbitrary(1,10));
+console.log(getRandomArbitrary(1, 10));
 
 // задание 6
-function getRandomArrNumbers(n){
+function getRandomArrNumbers(n) {
   const result = [];
 
-  for (let i = 0; i < n/2; i++){
-    result.push(Math.round(Math.random() * (n+1)))
+  for (let i = 0; i < Math.floor(n / 2); i++) {
+    result.push(Math.floor(Math.random() * n));
   }
-  return result
+  return result;
 }
-console.log(getRandomArrNumbers(12));
+console.log(getRandomArrNumbers(7));
 
 // задание 7
-function getRandomNumber(min,max) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
-console.log(getRandomNumber(1,5));
+console.log(getRandomNumber(1, 5));
 
 // задание 8
 let date = new Date();
@@ -65,21 +65,42 @@ let currentDate = new Date();
 let nextDate = new Date();
 let addDate = 73;
 nextDate.setDate(currentDate.getDate() + addDate);
-nextDate.toLocaleTimeString('ru-RU')
+nextDate.toLocaleTimeString("ru-RU");
 console.log(nextDate);
 
 // задание 10
-function formateDate(date){
-  const daysOfWeek = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота' ];
-  const months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+function formateDate(date) {
+  const daysOfWeek = [
+    "воскресенье",
+    "понедельник",
+    "вторник",
+    "среда",
+    "четверг",
+    "пятница",
+    "суббота",
+  ];
+  const months = [
+    "январь",
+    "февраль",
+    "март",
+    "апрель",
+    "май",
+    "июнь",
+    "июль",
+    "август",
+    "сентябрь",
+    "октябрь",
+    "ноябрь",
+    "декабрь",
+  ];
   const dayOfWeek = daysOfWeek[date.getDay()];
   const day = date.getDate();
   const month = months[date.getMonth()];
   const year = date.getFullYear();
-  const hours = date.getHours().toString().padStart(2,'0');
-  const minutes = date.getMinutes().toString().padStart(2,'0');
-  const seconds = date.getSeconds().toString().padStart(2,'0');
-  return `дата: ${day} ${month} ${year}: ${dayOfWeek}.\nвремя: ${hours}:${minutes}:${seconds}`
+  const hours = date.getHours().toString().padStart(2, "0");
+  const minutes = date.getMinutes().toString().padStart(2, "0");
+  const seconds = date.getSeconds().toString().padStart(2, "0");
+  return `дата: ${day} ${month} ${year}: ${dayOfWeek}.\nвремя: ${hours}:${minutes}:${seconds}`;
 }
 const curDate = new Date();
 console.log(formateDate(curDate));
